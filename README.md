@@ -27,7 +27,7 @@ This Python application manages a fictional chocolate house using SQLite. It han
 
 Clone the project to your local machine:
 
-```bash
+
 git clone https://github.com/yourusername/chocolate_house.git
 cd chocolate_house
 ### **2. Create and Activate Virtual Environment**
@@ -36,37 +36,37 @@ It's recommended to use a virtual environment for this project to avoid dependen
 
 #### **For macOS/Linux**:
 
-```bash
+
 python3 -m venv venv
 source venv/bin/activate
 #### **For Windows**:
 
-```bash
+
 python -m venv venv
 venv\Scripts\activate
 ### **3. Install Dependencies**
 
 Install the required dependencies using `pip`:
 
-```bash
+
 pip install -r requirements.txt
 ### **4. Database Setup**
 
 The SQLite database schema will be created automatically when you run the application. If you want to manually initialize the database schema, run the following command:
 
-```bash
+
 PYTHONPATH=. python3 app/main.py
 ### **5. Running the Application**
 
 To start the application, simply run:
 
-```bash
+
 PYTHONPATH=. python3 app/main.py
 ### **6. Testing the Application**
 
 The application has a basic testing suite. To run the tests, execute the following command:
 
-```bash
+
 pytest
 #### **Test Steps**
 
@@ -81,13 +81,13 @@ The project can also be run in a Docker container for consistency across differe
 
 From the project root directory, run the following command to build the Docker image:
 
-```bash
+
 docker build -t chocolate-house .
 #### **2. Run the Application in Docker**
 
 Once the image is built, run the application using the following command:
 
-```bash
+
 docker run -p 5000:5000 chocolate-house
 ### **File Structure
 chocolate_house/
