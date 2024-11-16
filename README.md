@@ -111,13 +111,13 @@ chocolate_house/
 - **`database.py`**:  
   Contains functions for connecting to the SQLite database, setting up tables from `schema.sql`, and performing database operations.
 
-- **`handlers/`**:  
+- **`app/handlers/`**:  
   Contains the core logic for managing:
   - **Seasonal Flavors** (`seasonal_flavors.py`)
   - **Inventory** (`inventory.py`)
   - **Customer Feedback** (`customer_feedback.py`)
 
-- **`schema.sql`**:  
+- **`app/schema.sql`**:  
   SQL file to set up the database schema.
 
 - **Tests**:  
