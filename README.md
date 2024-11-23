@@ -55,13 +55,15 @@ pip install -r requirements.txt
 The SQLite database schema will be created automatically when you run the application. If you want to manually initialize the database schema, run the following command:
 
 
-PYTHONPATH=. python3 app/main.py
+python -c "from app.database import setup_database; setup_database()"
+
 ### **5. Running the Application**
 
 To start the application, simply run:
 
 
-PYTHONPATH=. python3 app/main.py
+python -m app.main
+
 ### **6. Testing the Application**
 
 The application has a basic testing suite. To run the tests, execute the following command:
